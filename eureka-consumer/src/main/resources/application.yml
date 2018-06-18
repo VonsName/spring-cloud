@@ -9,3 +9,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+management:
+  security:
+    enabled: false #actuator 设置为允许访问
+endpoints:
+  beans:
+    id: mybean  #定制端点的属性
